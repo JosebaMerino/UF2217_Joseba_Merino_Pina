@@ -1,1 +1,119 @@
-Registrar producto
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supermercado | Inicio</title>
+
+    <base href="/">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"> 
+                <img src="images/logo.png" alt="" class="img-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-link">
+                        <a class="nav-link" href="index.html"> Página principal</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" href="/html/login.html"> Login </a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" href="/html/productos/index.html"> Tabla productos</a>
+                    </li>
+                    <li class="nav-link active">
+                        <a class="nav-link" href="/html/productos/registrar.html"> Registrar productos</a>
+                    </li>
+                </ul>
+                <!-- .navbar-nav .mr-auto -->
+            </div>
+            <!-- .collapse .navbar-collapse -->
+        </div>
+        <!-- .container -->
+    </nav>
+
+    <main class="container main">
+        <div class="row justify-content-center">
+        <div class="col-10 card mt-3">
+            <div class="card-body">
+            <h5 class="card-title text-center"> Registrar un producto</h5>
+            <form action="/html/productos/registrar.html">
+                <label for="nombre"> Nombre</label>
+                <div class="form-group">
+                    <input
+                        name="nombre" id="nombre"
+                        type="text"
+                        required
+                        class="form-control"
+                    >
+                </div>
+                <label for="precio"> Precio</label>
+                <div class="form-group">
+                    <input
+                        name="precio" id="precio"
+                        type="number"
+                        required
+                        class="form-control"
+                    >
+                </div>
+                <label for="descuento"> Descuento <span class="text-muted"> Marcar casilla si procede</span></label>
+                <div class="form-group ml-4">
+                    <div class="input-group-append">
+                        <input type="checkbox" name="tieneDescuento" class="form-check-input">
+                    </div>
+                    <input
+                        name="descuento" id="descuento"
+                        type="number"
+                        class="form-control"
+                    >
+                </div> 
+                <label for="cantidad"> Cantidad</label>
+                <div class="form-group">
+                    <input
+                        name="cantidad" id="cantidad"
+                        type="number"
+                        required
+                        class="form-control"
+                    >
+                </div> 
+                <button type="submit" class="btn btn-primary btn-block"> Registrar</button>
+            </form>
+            </div>
+            <!-- .card-body -->
+        </div>
+        <!-- .card -->
+        </div>
+        <!-- .row -->
+    </main>
+    <!-- .container -->
+
+    <footer class="bg-primary footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6"><a href="https://es-es.facebook.com/"><i class="fab fa-facebook-square text-dark"></i></a></div>
+                <div class="col-6"><a href="https://twitter.com/?lang=ES"><i class="fab fa-twitter-square text-dark"></i></a></div>
+                <div class="col-3"><a href="#" class="text-dark">Política de privacidad</a></div>
+                <div class="col-3"><a href="#" class="text-dark">Contacto</a></div>
+                <div class="col-3"><a href="#" class="text-dark">Localizacion</a></div>
+                <div class="col-3"><a href="#" class="text-dark"> Copyri</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.slim.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -55,6 +55,10 @@
 Clases
 */
 
+.main {
+    min-height: 81.9vh;
+}
+
 .producto {
     position: relative;
     width: 100%;
