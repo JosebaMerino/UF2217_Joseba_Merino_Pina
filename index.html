@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-secondary">
+<body class="bg-secondary" id="top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
             <a href="index.html" class="navbar-brand"> 
@@ -361,17 +361,33 @@
     </main>
     <!-- .container -->
 
+    <div class="to-top">
+        <div class=" text-center">
+            <a href="index.html#top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+        <!-- .text-center -->
+    </div>
+    <!-- .to-top -->
+
     <footer class="bg-primary footer">
         <div class="container">
             <div class="row">
-                <div class="col-6"><a href="https://es-es.facebook.com/"><i class="fab fa-facebook-square text-dark"></i></a></div>
-                <div class="col-6"><a href="https://twitter.com/?lang=ES"><i class="fab fa-twitter-square text-dark"></i></a></div>
-                <div class="col-3"><a href="#" class="text-dark">Política de privacidad</a></div>
-                <div class="col-3"><a href="#" class="text-dark">Contacto</a></div>
-                <div class="col-3"><a href="#" class="text-dark">Localizacion</a></div>
-                <div class="col-3"><a href="#" class="text-dark"> Copyri</a></div>
+                <div class="col-auto  "> Redes sociales: </div>
+                <div class="col-auto"><a target="_blank" href="https://es-es.facebook.com/"><i class="fab fa-facebook-square">Facebook</i> </a></div>
+                <div class="col-auto"><a target="_blank" href="https://twitter.com/?lang=ES"><i class="fab fa-twitter-square"> Twitter</i></a></div>
             </div>
+            <!-- .row -->
+            <div class="row">
+                <div class="col-auto"><a href="html/politicaDePrivacidad.html">Política de privacidad</a></div>
+                <div class="col-auto"><a target="_blank" href="mailto:joseba.merino.pina@gmail.com">Contacto</a></div>
+                <div class="col-auto"><a target="_blank" href="https://www.google.es/maps/place/Ipartek+Servicios+Inform%C3%A1ticos/@43.2564079,-2.9157807,17z/data=!3m1!4b1!4m5!3m4!1s0xd4e4fb46238d865:0xb671edfb1120ab06!8m2!3d43.256404!4d-2.913592">Localizacion</a></div>
+                <div class="col-auto">  2019&copy;</div>
+            </div>
+            <!-- .row -->
         </div>
+        <!-- .container -->
     </footer>
 
     <script src="js/jquery-3.4.1.slim.js"></script>

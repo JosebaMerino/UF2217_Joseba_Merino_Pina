@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-secondary">
+<body class="bg-secondary" id="top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
             <a href="index.html" class="navbar-brand"> 
@@ -44,51 +44,74 @@
         <!-- .container -->
     </nav>
     <div class="container-fluid d-inline-block main">
-            <div class="row d-flex h-100 justify-content-center">
-                <div class="col-12 col-sm-10 col-md-6">
-                    <div class="card m-2 mt-5">
-                        <div class="card-body">
-                            <h4 class="text-center">Login</h4>
-                            <form class="login" action="/html/login.html">
-                                <div class="form-group">
-                                    <input type="text"
-                                        name="email" id="email"   
-                                        class="form-control"
-                                        pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b"
-                                        title="Introduce nombre de usuario"
-                                        required
-                                    >
-                                    <label for="email"> Email </label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="password"
-                                        name="contrasena" id="contrasena"
-                                        class="form-control"
-                                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
-                                        title="Contraseña de longitud 8 que contenga numeros, mayusculas y minusculas"
-                                        required
-                                    >
-                                    <label for="contrasena"> Contraseña </label>
-                                </div>
-                                
-                                <button class="btn btn-primary btn-block"> Entrar </button>
-                            </form>
-                        </div>
+        <div class="row d-flex h-100 justify-content-center">
+            <div class="col-12 col-sm-10 col-md-6">
+                <div class="card m-2 mt-5">
+                    <div class="card-body">
+                        <h4 class="text-center">Login</h4>
+                        <form class="login" action="/html/login.html">
+                            <div class="form-group">
+                                <input type="text"
+                                    name="email" id="email"   
+                                    class="form-control"
+                                    pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b"
+                                    title="Introduce correo electronico. Por ejemplo: ejemplo@mail.com"
+                                    required
+                                >
+                                <label for="email"> Email </label>
+                            </div>
+                            <!-- .form-group -->
+
+                            <div class="form-group">
+                                <input type="password"
+                                    name="contrasena" id="contrasena"
+                                    class="form-control"
+                                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                                    title="Contraseña de longitud 8 que contenga numeros, mayusculas y minusculas"
+                                    required
+                                >
+                                <label for="contrasena"> Contraseña </label>
+                            </div>
+                            <!-- .form-group -->
+                            
+                            <button class="btn btn-primary btn-block"> Entrar </button>
+                        </form>
                     </div>
+                    <!-- .card-body -->
                 </div>
-            </div>  
+                <!-- .card .m-2 .mt-5 -->
+            </div>
+            <!-- .col-12 .col-sm-10 .col-md-6 -->
+        </div>  
+        <!-- .row .d-flex .h-100 .justify-content-center -->
+
+    <div class="to-top">
+        <div class=" text-center">
+            <a href="/html/login.html#top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+        <!-- .text-center -->
+    </div>
+    <!-- .to-top -->
 
     <footer class="bg-primary footer">
         <div class="container">
             <div class="row">
-                <div class="col-6"><a href="https://es-es.facebook.com/"><i class="fab fa-facebook-square text-dark"></i></a></div>
-                <div class="col-6"><a href="https://twitter.com/?lang=ES"><i class="fab fa-twitter-square text-dark"></i></a></div>
-                <div class="col-3"><a href="#" class="text-dark">Política de privacidad</a></div>
-                <div class="col-3"><a href="#" class="text-dark">Contacto</a></div>
-                <div class="col-3"><a href="#" class="text-dark">Localizacion</a></div>
-                <div class="col-3"><a href="#" class="text-dark"> Copyri</a></div>
+                <div class="col-auto  "> Redes sociales: </div>
+                <div class="col-auto"><a target="_blank" href="https://es-es.facebook.com/"><i class="fab fa-facebook-square">Facebook</i> </a></div>
+                <div class="col-auto"><a target="_blank" href="https://twitter.com/?lang=ES"><i class="fab fa-twitter-square"> Twitter</i></a></div>
             </div>
+            <!-- .row -->
+            <div class="row">
+                <div class="col-auto"><a href="html/politicaDePrivacidad.html">Política de privacidad</a></div>
+                <div class="col-auto"><a target="_blank" href="mailto:joseba.merino.pina@gmail.com">Contacto</a></div>
+                <div class="col-auto"><a target="_blank" href="https://www.google.es/maps/place/Ipartek+Servicios+Inform%C3%A1ticos/@43.2564079,-2.9157807,17z/data=!3m1!4b1!4m5!3m4!1s0xd4e4fb46238d865:0xb671edfb1120ab06!8m2!3d43.256404!4d-2.913592">Localizacion</a></div>
+                <div class="col-auto">  2019&copy;</div>
+            </div>
+            <!-- .row -->
         </div>
+        <!-- .container -->
     </footer>
 
     <script src="js/jquery-3.4.1.slim.js"></script>
