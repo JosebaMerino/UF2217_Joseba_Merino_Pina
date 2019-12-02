@@ -57,6 +57,7 @@ Clases
 
 .main {
     min-height: 81.9vh;
+    margin-bottom: 7vh;
 }
 
 .producto {
@@ -168,4 +169,11 @@ Clases
 
 .footer {
     min-height: 7vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    display: inline-block;
+    width: 100vw;
+    z-index: 100;
 }
