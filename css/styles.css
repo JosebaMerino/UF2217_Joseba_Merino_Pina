@@ -10,32 +10,28 @@
 }
 
 
-
+.producto {
+    position: relative;
+    width: 100%;
+    margin: 2px;
+    border-radius: 0;
+}
 /* SM media query */
 @media (min-width: 576px) {
-    .card-columns{
-        column-count: 2;
-    }
     .producto {
-        width: 50%;
+        width: calc(50% - 4px);
     }
 }
 /* MD media query */
 @media (min-width: 768px) {
-    .card-columns{
-        column-count: 3;
-    }
     .producto {
-        width: 33%;
+        width: calc(33% - 4px);
     }
 }
 /* LG media query */
 @media (min-width: 992px) {
-    .card-columns{
-        column-count: 5;
-    }
     .producto {
-        width: 19%;
+        width: calc(20% - 4px);
     }
 }
 
@@ -43,12 +39,10 @@
 
 
 
-
-
-.producto {
-    position: relative;
-    width: 100%;
-    border-radius: 0;
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .producto > .btn {
