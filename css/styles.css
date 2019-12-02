@@ -1,7 +1,122 @@
-main {
-    color: red;
+/*
+#88cc88
+*/
+
+
+/* Card deck overide
+******************************************/
+.card-columns {
+    column-count: 1;
+}
+
+
+
+/* SM media query */
+@media (min-width: 576px) {
+    .card-columns{
+        column-count: 2;
+    }
+    .producto {
+        width: 50%;
+    }
+}
+/* MD media query */
+@media (min-width: 768px) {
+    .card-columns{
+        column-count: 3;
+    }
+    .producto {
+        width: 33%;
+    }
+}
+/* LG media query */
+@media (min-width: 992px) {
+    .card-columns{
+        column-count: 5;
+    }
+    .producto {
+        width: 19%;
+    }
+}
+
+
+
+
+
+
+
+.producto {
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+}
+
+.producto > .btn {
+    color: white;
+    background-color: #88cc88;
+    border-radius: 0;
+}
+
+.descuento {
+    background-color: #ed5a5a;
+    font-size: large;
+    
+    display: inline;
+    
+    position: absolute;
+    top:  1rem;
+    left: 1rem ;
+}
+
+.precio-descuento {
+    color: #ed5a5a;
+    font-weight: 700;
+    font-size: 120%;
+}
+
+.precio-descuento span {
+    color: black;
+    text-decoration-line: line-through; 
+    margin-right: 0.5rem;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+.numero-productos input.form-control {
+    background-color: #f7f7f7;
+    border: 2px solid #dfdfdf;
+    border-left: 0;
+    border-right: 0;
+    height: 100%;
+}
+
+.numero-productos .btn-izq {
+    border: 2px solid #dfdfdf    ;
+    background-color: #f7f7f7;
+    border-right: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+    height: 100%;
+
+}
+.numero-productos .btn-der {
+    border: 2px solid #dfdfdf;
+    background-color: #f7f7f7;
+    border-left: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    height: 100%;
+
 }
 
 .img-logo {
     height: 1rem;
+}
+
+.product-img {
+    object-fit: scale-down;
+    width: 100%;
+    height: 20vh;
 }
