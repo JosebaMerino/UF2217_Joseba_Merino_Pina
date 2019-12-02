@@ -1,1 +1,235 @@
-Lista productos (/productos/index.html)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supermercado | Inicio</title>
+
+    <base href="/">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"/>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"> 
+                <img src="images/logo.png" alt="" class="img-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-link">
+                        <a class="nav-link" href="index.html"> Página principal</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" href="/html/login.html"> Login </a>
+                    </li>
+                    <li class="nav-link active">
+                        <a class="nav-link" href="/html/productos/index.html"> Tabla productos</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" href="/html/productos/registrar.html"> Registrar productos</a>
+                    </li>
+                </ul>
+                <!-- .navbar-nav .mr-auto -->
+            </div>
+            <!-- .collapse .navbar-collapse -->
+        </div>
+        <!-- .container -->
+    </nav>
+
+
+    <main class="container">
+            <div class="row">
+                <div class="col-12 border border-dark">
+                    <h1 class="text-center"> Productos </h1>
+                    <table id="tabla" class="table bg-white">
+                        <thead>
+                            <th> Precio </th>
+                            <th> Nombre </th>
+                            <th> Cantidad </th>
+                        </thead>
+                        <tfoot>
+                            <th> Precio </th>
+                            <th> Nombre </th>
+                            <th> Cantidad </th>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td> 12€</td>
+                                <td> Ginebra Beefeater</td>
+                                <td> 98 </td>
+                            </tr>
+                            <tr>
+                                <td>Lorem.</td>
+                                <td>Nobis.</td>
+                                <td>Cupiditate!</td>
+                            </tr>
+                            <tr>
+                                <td>Maxime.</td>
+                                <td>Quasi.</td>
+                                <td>Dolor.</td>
+                            </tr>
+                            <tr>
+                                <td>Sapiente.</td>
+                                <td>Nemo.</td>
+                                <td>Voluptatem?</td>
+                            </tr>
+                            <tr>
+                                <td>Recusandae!</td>
+                                <td>Eveniet?</td>
+                                <td>Ducimus?</td>
+                            </tr>
+                            <tr>
+                                <td>Laboriosam.</td>
+                                <td>Ipsam!</td>
+                                <td>Quaerat.</td>
+                            </tr>
+                            <tr>
+                                <td>Debitis!</td>
+                                <td>Maiores.</td>
+                                <td>Nam.</td>
+                            </tr>
+                            <tr>
+                                <td>Ipsum!</td>
+                                <td>Inventore.</td>
+                                <td>Fuga!</td>
+                            </tr>
+                            <tr>
+                                <td>Inventore!</td>
+                                <td>Velit?</td>
+                                <td>Quibusdam!</td>
+                            </tr>
+                            <tr>
+                                <td>Est.</td>
+                                <td>Itaque.</td>
+                                <td>Voluptatum.</td>
+                            </tr>
+                            <tr>
+                                <td>Optio?</td>
+                                <td>Voluptatem.</td>
+                                <td>Repellat!</td>
+                            </tr>
+                            <tr>
+                                <td>Quo.</td>
+                                <td>Consequatur?</td>
+                                <td>Similique!</td>
+                            </tr>
+                            <tr>
+                                <td>Iusto?</td>
+                                <td>Quasi!</td>
+                                <td>Dignissimos!</td>
+                            </tr>
+                            <tr>
+                                <td>Eos.</td>
+                                <td>Inventore.</td>
+                                <td>Voluptates.</td>
+                            </tr>
+                            <tr>
+                                <td>Animi!</td>
+                                <td>Fugit.</td>
+                                <td>Voluptates?</td>
+                            </tr>
+                            <tr>
+                                <td>Cupiditate.</td>
+                                <td>Odit!</td>
+                                <td>Rem.</td>
+                            </tr>
+                            <tr>
+                                <td>Esse.</td>
+                                <td>Esse?</td>
+                                <td>Quod.</td>
+                            </tr>
+                            <tr>
+                                <td>Minima?</td>
+                                <td>Sapiente.</td>
+                                <td>Accusamus!</td>
+                            </tr>
+                            <tr>
+                                <td>Odio!</td>
+                                <td>Illum.</td>
+                                <td>Tempore.</td>
+                            </tr>
+                            <tr>
+                                <td>Quibusdam.</td>
+                                <td>Maxime.</td>
+                                <td>Repudiandae.</td>
+                            </tr>
+                            <tr>
+                                <td>Officia.</td>
+                                <td>Necessitatibus.</td>
+                                <td>Eius!</td>
+                            </tr>
+                    </table>
+                </div>
+                <!-- .col -->
+            </div>
+            <!-- .row -->
+        </main>
+        <!-- .container -->
+    <footer class="bg-primary footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6"><a href="https://es-es.facebook.com/"><i class="fab fa-facebook-square text-dark"></i></a></div>
+                <div class="col-6"><a href="https://twitter.com/?lang=ES"><i class="fab fa-twitter-square text-dark"></i></a></div>
+                <div class="col-3"><a href="#" class="text-dark">Política de privacidad</a></div>
+                <div class="col-3"><a href="#" class="text-dark">Contacto</a></div>
+                <div class="col-3"><a href="#" class="text-dark">Localizacion</a></div>
+                <div class="col-3"><a href="#" class="text-dark"> Copyri</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.slim.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+    $('#tabla').DataTable({
+        language: {
+            "sProcessing":     "Procesando...",
+            "sLengthMenu":     "Mostrar _MENU_ registros",
+            "sZeroRecords":    "No se encontraron resultados",
+            "sEmptyTable":     "Ningún dato disponible en esta tabla =(",
+            "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+            "sInfoPostFix":    "",
+            "sSearch":         "Buscar:",
+            "sUrl":            "",
+            "sInfoThousands":  ",",
+            "sLoadingRecords": "Cargando...",
+            "oPaginate": {
+                "sFirst":    "Primero",
+                "sLast":     "Último",
+                "sNext":     "Siguiente",
+                "sPrevious": "Anterior"
+            },
+            "oAria": {
+                "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+            },
+            "buttons": {
+                "copy": "Copiar",
+                "colvis": "Visibilidad"
+            }
+}
+    });
+} );
+</script>
+</body>
+</html>
